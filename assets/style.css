@@ -1,0 +1,115 @@
+:root {
+    --background: rgb(196, 179, 154);
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 5rem;
+    min-width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    background-color: var(--background);
+    flex-grow: 1;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+a  {
+text-decoration: none;
+background-color: bisque;
+color: rgb(0, 0, 0);
+padding: 10px;
+margin: 10px;
+border-radius: 6px;
+transition: background-color 0.5s, color 0.5s;
+border: 3px solid pink;
+}
+
+a:hover {
+    background-color: rgb(147, 197, 226);
+    color: rgb(199, 161, 55);
+}
+
+.nav {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tile {
+    height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+img {
+    height: 450px;
+}
+
+.column {
+    height: 800px;
+}
+
+.buy {
+    background-color: black;
+    min-width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 300ms, color 300ms;
+}
+
+.buy:hover {
+    background-color: white;
+    color: black;
+}
+
+.filter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(94, 60, 16, 0.295);
+    border-radius: 5px;
+}
+
+.filter:hover {
+    display: none;
+}
